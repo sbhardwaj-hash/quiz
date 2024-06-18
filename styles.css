@@ -1,0 +1,123 @@
+body {
+    
+    background-image: url('https://media.giphy.com/media/9J8K8WEWLXZk7s0OMB/giphy.gif?cid=790b7611vm1trr9cfg1clqfvm75lthmnhi3y9vkxgx6nm1vp&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+    background-size: cover;
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+header {
+    background-color: transparent;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+h1 {
+    width:500px;
+    margin: 0 auto;
+    background: transparent;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.box {
+    background-color: #FAFFC7;
+    padding: 20px;
+    border-radius: 10px;
+    -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.question {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px;
+}
+
+.option.selected {
+    background-color: #2196F3; /* Light blue for selected option */
+    color: white;
+}
+
+.option.correct {
+    background-color: #4CAF50; /* Green for correct */
+    color: white;
+}
+
+.option.incorrect {
+    background-color: #F44336; /* Red for incorrect */
+    color: white;
+}
+
+.option:hover {
+    background-color: #ddd;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.nav-button {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+.nav-button:hover {
+    background-color: #8c5ad2;
+}
+
+.button {
+    display: block;
+    width: 300px;
+    padding: 15px;
+    margin: 10px auto;
+    -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: #FFD700;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #FFEA00;
+    border-color: #FFEA00;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
